@@ -71,11 +71,37 @@ html, body, frameset
 - [CSS中可以和不可以继承的属性](http://www.cnblogs.com/thislbq/p/5882105.html)
 ### [优先级](https://www.jianshu.com/p/0ea3fd082a2e)
 - 仅内联：后来居上
-- id > （类，属性，伪类）> 元素 > 通配符 > 浏览器默认样式 > 继承样式
+- id >（类，属性，伪类）>元素> 通配符 > 浏览器默认样式 > 继承样式
 - 伪元素其实是在元素内容内虚拟创建了一个元素，且无法被其他选择器选取。对于伪元素的样式，不用考虑优先级
 - 社群关系、亲戚关系不会影响其本身的权重
 
 
+## 7. [定位机制](https://www.jianshu.com/p/f625319c40c5)
+- 普通流、浮动、绝对定位
+- position
+    - static 默认定位
+    - relative 相对定位
+    - absolute 绝对定位
+    - fixed 固定定位（脱离文档流）
+
+### [替换元素和非替换元素，块级元素和行内元素](https://www.jianshu.com/p/2524609fab2f)
+#### 替换元素
+- 浏览器会根据元素的标签和属性，来决定元素的具体显示内容
+- eg. img, input, textarea, select
+#### 非替换元素
+#### 块级元素和行内元素
+
+### [定位与覆盖](https://www.jianshu.com/p/1946c91c470f)
+- ~~当元素脱离了文档流，位置上认为父元素中无此元素(有待商榷)~~
+- 多个float的时候，满行会自动换行
+
+- 相同定位（relative，absolute，fixed）之间按先后顺序后者覆盖前者。
+- 不同定位之间relative,absolute,fixed > float > static
+- z-index能影响relative，absolute，fixed的层级，越大越靠上，相同时按先后顺序后者覆盖前者。
+- 比较z-index时，兄弟之间直接比较大小，非兄弟比较其祖先元素
+
+
+### [浮动与清除浮动](https://www.jianshu.com/p/999f74da7a36)
 
 
 
